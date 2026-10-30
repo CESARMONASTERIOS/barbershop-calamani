@@ -3,7 +3,7 @@
 
 const TEAM = [
   "Apaza Choque Ronald",
-  "Yanique Quispe Israel",
+  "Quispe Yanique Israel",
   "Ticona Monasterios César Diego",
   "Velasco Ramos Misael Albert",
 ];
