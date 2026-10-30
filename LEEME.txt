@@ -1,0 +1,20 @@
+BARBERSHOP (CALAMANI) - Sistema de Gestión y Reservas
+=====================================================
+
+web/index.html         Entrada de la Vista (React). Ábrelo con doble clic.
+web/css/styles.css     Estilos responsive para celular, tablet y escritorio.
+web/js/model.js        Modelo: datos, validaciones, disponibilidad y almacenamiento.
+web/js/view.js         Vista: componentes y diagramas.
+web/js/controller.js   Controlador: flujo y estado de las reservas.
+                       React y las fuentes se cargan desde CDN.
+server/                API en TypeScript + PostgreSQL + WhatsApp
+                       (envío desde +591 76243108).
+
+Para activar el WhatsApp automático:
+1. Crear la base:      psql -d calamani -f server/schema.sql
+2. Copiar .env.example a .env y llenar DATABASE_URL, WA_PHONE_NUMBER_ID, WA_TOKEN.
+3. Instalar y correr:  cd server && npm install && npm start
+4. En web/js/model.js, cambiar la constante  const API="";  por la URL del servidor
+   (ej. const API="https://tu-servidor.com";).
+5. En Meta (WhatsApp Business Platform): registrar el número, aprobar la plantilla
+   "cita_agendada" (texto en el encabezado de server/index.ts) y apuntar el webhook a /webhook.

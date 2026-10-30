@@ -1,0 +1,12 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Installed dependencies
+node_modules/
+
+# Logs and local OS files
+*.log
+.DS_Store
+Thumbs.db
