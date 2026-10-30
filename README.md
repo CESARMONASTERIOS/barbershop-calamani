@@ -4,6 +4,8 @@ Sistema web de gestión y reservas para BarberShop Calamani. La aplicación
 incluye información sobre servicios y barberos, un formulario de reservas y
 modelos de análisis del sistema.
 
+**Sitio web publicado:** [Abrir BarberShop Calamani](https://cesarmonasterios.github.io/barbershop-calamani/)
+
 ## Estructura
 
 - `web/index.html`: punto de entrada de la aplicación.
